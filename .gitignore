@@ -1,0 +1,12 @@
+build/
+docs/
+generated/
+__pycache__/
+*.exe
+*.log
+
+# Local development files
+work/
+bin/
+mcp.config.json
+

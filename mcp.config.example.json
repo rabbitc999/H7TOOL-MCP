@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "h7tool-cpp": {
+      "command": "C:/path/to/STM32_LUA_CAR/cpp/build/h7tool_mcp.exe",
+      "args": [
+        "--config",
+        "C:/path/to/STM32_LUA_CAR/cpp/config.json"
+      ]
+    }
+  }
+}

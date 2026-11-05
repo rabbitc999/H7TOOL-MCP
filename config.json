@@ -1,0 +1,28 @@
+{
+  "adapter": {
+    "type": "h7tool_hid",
+    "vendor_id": 49745,
+    "product_id": 61450,
+    "interface_number": 2,
+    "timeout_ms": 8000,
+    "unit_id": 1
+  },
+  "limits": {
+    "max_read_memory_bytes": 1024
+  },
+  "target": {
+    "family": "STM32H743",
+    "idcode_address": "0x5C001000",
+    "cpuid_address": "0xE000ED00",
+    "uid_address": "0x1FF1E800",
+    "uid_length": 12
+  },
+  "rtt": {
+    "ranges": [
+      {
+        "address": "0x24000000",
+        "length": 524288
+      }
+    ]
+  }
+}

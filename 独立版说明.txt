@@ -1,0 +1,21 @@
+H7-TOOL MCP 独立版
+
+来源：G:/Desktop/STM32H7-SmartCar/cpp
+程序：bin/h7tool_mcp.exe
+配置：config.json（STM32H743）
+
+已注册到 Codex，名称 h7tool-cpp。重启 Codex 后加载。
+直接启动：.\bin\h7tool_mcp.exe --config .\config.json
+其他 MCP 客户端可参考 mcp.config.json。
+
+重新编译（在本文件夹中）：
+cmake -S . -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j 2
+ctest --test-dir build --output-on-failure
+
+独立验证：
+.\bin\h7tool_mcp.exe --config .\config.json --self-test
+python verify_protocol.py --executable bin/h7tool_mcp.exe
+
+已通过内置自测及 stdio 协议测试，共 11 个工具；未执行硬件操作。
+原始详细说明见 README.zh-CN.txt；许可证见 LICENSE 和 third_party。
